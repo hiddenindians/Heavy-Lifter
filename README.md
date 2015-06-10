@@ -43,7 +43,9 @@ Given a folder that contains X amount of subfolders that each contain X amount o
 </div>
 ```
 
-The id of the element to insert them to [in this case, #gallery], as well as the folder and the item tags, their classes, and the classes for the first folder and its first item can be set in the file heavy-lifter.js.
+The corresponding element's ID [in this case, #gallery] can be set in the file heavy-lifter.js. From here, you may also define the folder and item tags, and their respective classes.
+
+THe directory to scan can be set in the file build.php.
   
 ##Usage
 
