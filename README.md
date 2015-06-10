@@ -6,3 +6,15 @@ Heavy Lifter depends on JQuery 1.11.X
 
 #Usage
 Add heavy-lifter.js to your /js folder and build.php to your /php folder. Then add heavy-lifter to your HTML's head.
+
+```HTML
+<head>
+  ...
+  <script type="text/javascript" src="js/heavy-lifter.js"></script>
+  ...
+</head>
+```
+
+Next, update the variables in build.php and heavy-lifter.js to suit your needs.
+
+
