@@ -1,5 +1,5 @@
 # Heavy-Lifter
-Heavy Lifter scans a a set of folders for content and then inserts that content into your webpage as HTML.
+Heavy Lifter scans a set of folders for content and then inserts that content into your webpage as HTML.
 #Limitations
 Heavy Lifter can only scan folders nested one level. Your folder can contain as many subfolders as you want, but none of those can contain any of their own subfolders.
 ##Dependancies
@@ -33,4 +33,4 @@ Heavy Lifter depends on JQuery 1.11.X
 
 | variable | purpose | 
 | -------- | ------- |
-| $dir    | Sets the directory containing the folders to scan.
+| $dir    | Sets the directory containing the folders to scan. |
