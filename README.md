@@ -1,7 +1,8 @@
 # Heavy-Lifter
 Heavy Lifter scans a set of folders for content and then inserts that content into your webpage as HTML.
 #Limitations
-Heavy Lifter can only scan folders nested one level. Your folder can contain as many subfolders as you want, but none of those can contain any of their own subfolders.
+- Heavy Lifter currently only supports item tags that use the src attribute. 
+- Heavy Lifter can only scan folders nested one level. Your folder can contain as many subfolders as you want, but none of those can contain any of their own subfolders.
 ##Dependancies
 Heavy Lifter depends on JQuery 1.11.X
 
