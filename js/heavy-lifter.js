@@ -10,7 +10,7 @@ var albumTag = "album";
 var itemTag = "img";
 var itemClass = "photo";
 var albumTagClass = "album";
-var containerID = "gallery";
+var container = ".heavy-lifter";
 var firstAlbumClass = "active-album";
 var firstAlbumItemClass = "active-photo";
 
@@ -47,7 +47,7 @@ function insertHTML(initArray) {
 			albumName = albumSplit[j].toString();
 		}
 		//append album to gallery
-		$("#" + containerID).append("<" + albumTag + " id=\""+albumName+"\" class=\"" + albumTagClass + "\"> </"+ albumTag + ">");
+		$(container).append("<" + albumTag + " id=\""+albumName+"\" class=\"" + albumTagClass + "\"> </"+ albumTag + ">");
 		
 		//update indexes
 		numItems = initArray[index];
@@ -60,7 +60,7 @@ function insertHTML(initArray) {
 		}
 	}
 
-	$("#" + containerID + " " + albumTag + ":first-child").addClass(firstAlbumClass).removeClass(albumTagClass);
+	$(container + " " + albumTag + ":first-child").addClass(firstAlbumClass).removeClass(albumTagClass);
 	$("." + firstAlbumClass + " " + itemTag + ":first-child").addClass(firstAlbumItemClass).removeClass(itemClass);
 };
 
