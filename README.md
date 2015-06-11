@@ -10,7 +10,7 @@ Heavy Lifter depends on JQuery 1.11.X
 ##Example
 Given a folder that contains X amount of subfolders that each contain X amount of images, heavy-lifter would insert those folders and their contents into your HTML in this manner:
 ```HTML
-<div id="#gallery">
+<div id="#gallery" class="heavy-lifter">
   <album id="folder1" class="active-album">
     <img src="../images/gallery/folder1/img1.jpg" class="active-photo"/>
     <img src="../images/gallery/folder1/img2.jpg" class="photo"/>
@@ -51,6 +51,7 @@ THe directory to scan can be set in the file build.php.
 
 - Add heavy-lifter.js to your /js folder and build.php to your /php folder. 
 - Add heavy-lifter to your HTML's head
+- Add heavy-lifter as a class for your container element.
 ```HTML
 <head>
   ...
@@ -67,7 +68,7 @@ THe directory to scan can be set in the file build.php.
 | itemTag  | Sets the type of HTML tag to use for the items. |
 | itemClass | Sets a class for the items. |
 | albumTagClass | Sets a class for the folders. |
-| container | The id or class of the element you want to contain the generated HTML. By default this is set to heavy-lifter.js |
+| container | The id or class of the element you want to contain the generated HTML. By default this is set to .heavy-lifter|
 | firstAlbumClass | Sets a unique class name for the first folder. |
 | firstAlbumItemClass | Sets a unique class name for the first item in the first folder. |
 
