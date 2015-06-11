@@ -67,7 +67,7 @@ THe directory to scan can be set in the file build.php.
 | itemTag  | Sets the type of HTML tag to use for the items. |
 | itemClass | Sets a class for the items. |
 | albumTagClass | Sets a class for the folders. |
-| containerID | The id of the element you want to contain the generated HTML. |
+| container | The id or class of the element you want to contain the generated HTML. By default this is set to heavy-lifter.js |
 | firstAlbumClass | Sets a unique class name for the first folder. |
 | firstAlbumItemClass | Sets a unique class name for the first item in the first folder. |
 
