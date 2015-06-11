@@ -55,7 +55,7 @@ function insertHTML(initArray) {
 		index = index + 2; 
 		//add images to gallery
 		for(var k = 0; k < numItems; k++){
-			$("#" + albumName).append("<" + itemTag +" src=\"" + initArray[index] + "\" class=\"" + itemClass + "\" />")
+			$("#" + albumName).append("<" + itemTag +" src=\"" + initArray[index] + "\" class=\"" + itemClass + "\" />");
 			index = index + 1;
 		}
 	}
