@@ -1,14 +1,14 @@
 # Heavy-Lifter
 Heavy Lifter scans a set of folders for content and then inserts that content into your webpage as HTML.
 ##Limitations
-- Heavy Lifter currently only supports item tags that use the src attribute. 
-- Heavy Lifter can only scan folders nested one level. Your folder can contain as many subfolders as you want, but none of those can contain any of their own subfolders.
+- Heavy Lifter currently only supports tags that make use of the 'src' attribute.
+- Heavy Lifter can only scan folders nested one level deep. Your folder can contain as many sub-folders as you want, but none of those can contain any of their own sub-folders.
 
 ##Dependancies
 Heavy Lifter depends on JQuery 1.11.X
 
 ##Example
-Given a folder that contains X amount of subfolders that each contain X amount of images, heavy-lifter would insert those folders and their contents into your HTML in this manner:
+Given a folder that contains X amount of sub-folders that each contain X amount of images, heavy-lifter would insert those folders and their contents into your HTML like this:
 ```HTML
 <div id="#gallery" class="heavy-lifter">
   <album id="folder1" class="active-album">
@@ -43,15 +43,10 @@ Given a folder that contains X amount of subfolders that each contain X amount o
 </div>
 ```
 
-The corresponding element's ID [in this case, #gallery] can be set in the file heavy-lifter.js. From here, you may also define the folder and item tags, and their respective classes.
-
-THe directory to scan can be set in the file build.php.
-  
 ##Usage
 
 - Add heavy-lifter.js to your /js folder and build.php to your /php folder. 
 - Add heavy-lifter to your HTML's head
-- Add heavy-lifter as a class for your container element.
 ```HTML
 <head>
   ...
@@ -59,7 +54,14 @@ THe directory to scan can be set in the file build.php.
   ...
 </head>
 ```
-- Update the variables in build.php and heavy-lifter.js to suit your needs.
+- Add heavy-lifter to the class of whichever element you want the HTML inserted to.
+
+```HTML
+...
+<div id="container" class="heavy-lifter">
+...
+```
+
 
 ###heavy-lifter.js settings
 | variable | purpose |
